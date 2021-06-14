@@ -1,0 +1,7 @@
+location = "Central US"
+prefix = "CenUS"
+address_space = "10.190.192.0/22"
+address_prefixes = "10.190.194.16/28"
+admin_username = "adminuser"
+admin_password = "Welcome@12345"
+source_ip = "122.171.102.142"
