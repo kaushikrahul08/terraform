@@ -137,7 +137,7 @@ resource "azurerm_virtual_network_peering" "peer-hub-spoke-eastus" {
 
   name                         = "peer-east-to-${each.key}"
   resource_group_name          = "rg-eastus-dev-001"
-  virtual_network_name         = azurerm_virtual_network.vnet[each.key].name
+  virtual_network_name         = azurerm_virtual_network.vnet[0].name
   remote_virtual_network_id    = each.value.id
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
